@@ -1,3 +1,4 @@
+
 public class HelloWorld {
 
     public static void main(String[] args) {            // Will not run if main method is not used
@@ -118,9 +119,9 @@ public class HelloWorld {
 //        Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
 //            int number = 214748364700;
 //            int number too large
-            int number = Integer.MAX_VALUE = 1;
-            // -2147483648
-            System.out.println(number);
+//            int number = Integer.MAX_VALUE = 1;
+//            // -2147483648
+//            System.out.println(number);
     }
 
 }
