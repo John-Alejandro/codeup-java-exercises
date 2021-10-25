@@ -1,3 +1,4 @@
+import java.awt.desktop.SystemEventListener;
 import java.util.Scanner;
 public class ConsoleExercises {
     public static void main(String[] args) {
@@ -35,6 +36,11 @@ public class ConsoleExercises {
 //        System.out.print("Enter 3 word sentence: ");
 //        String userInput2 = scanner.nextLine();
 //        System.out.println(userInput2);
+//        String wordOne = sc.next();
+//        String wordTwo = sc.next();
+//        String wordThree = sc.next();
+//
+//        System.out.print("1: %s\n2,%s\n3: %s, wordOne,wordTwo,wordThree");
 //                What happens if you enter less than 3 words?  // It will print what ever you enter
 //                What happens if you enter more than 3 words? // It will print what ever you enter
 //        3. Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user.
@@ -42,6 +48,9 @@ public class ConsoleExercises {
 //        System.out.println("Enter a complete sentence.");
 //        String userInput3 = scanner.next();
 //        System.out.println(userInput3);
+//
+//        String.sentence = sc.nextLine();
+//        System.out.println(sentence);
 //        do you capture all the words?
 
 //         4. Rewrite the above example using the nextLine method.
@@ -55,13 +64,13 @@ public class ConsoleExercises {
 
 //        1. Prompt the user to enter values of length and width of a classroom at Codeup.
 
-        System.out.print("What is the length of the classroom?");
-        int userWidth = scanner.nextInt();
-        System.out.println(userWidth);
-
-        System.out.print("What is the width of the classroom?");
-        int userLength = scanner.nextInt();
-        System.out.println(userWidth);
+//        System.out.print("What is the length of the classroom?");
+//        int userWidth = scanner.nextInt();
+//        System.out.println(userWidth);
+//
+//        System.out.print("What is the width of the classroom?");
+//        int userLength = scanner.nextInt();
+//        System.out.println(userWidth);
 
 
 
@@ -74,23 +83,23 @@ public class ConsoleExercises {
 //
 //                The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
 //
-        int area = userWidth * userLength;
-        System.out.println("Area of the classroom is " + area + " sq.ft");
-
-        int perimeter = 2*userWidth +2*userLength;
-        System.out.println("Perimeter of classroom is " + perimeter + " sq.ft" );
+//        int area = userWidth * userLength;
+//        System.out.println("Area of the classroom is " + area + " sq.ft");
+//
+//        int perimeter = 2*userWidth +2*userLength;
+//        System.out.println("Perimeter of classroom is " + perimeter + " sq.ft" );
 
 //         Bonuses
 
 
 //        In your perimeter/area calculator: - Accept decimal entries. - Calculate the volume of the rooms in addition to the area and perimeter.
 
-        System.out.println("What is the height of the classroom?");
-        int userheight = scanner.nextInt();
-
-        int volume = userLength * userWidth * userheight;
-        System.out.println("Volume of the classroom is " + volume + " cu.ft");
+//        System.out.println("What is the height of the classroom?");
+//        int userheight = scanner.nextInt();
 //
+//        int volume = userLength * userWidth * userheight;
+//        System.out.println("Volume of the classroom is " + volume + " cu.ft");
+////
 //        The Scanner class can be told specifically what characters or pattern separates tokens in a piece of input with the useDelimiter method. Add the following line of code to your application after you have created a scanner (assuming the variable holding the Scanner is named scanner):
 //
 //
