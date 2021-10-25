@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
@@ -68,5 +70,68 @@ public class ControlFlowExercises {
 //        for (long i = 2; i < 1000000; i = i * i) {
 //            System.out.println(i);
 //        }
+
+//        Fizzbuzz
+//
+//        One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
+//
+//                Write a program that prints the numbers from 1 to 100.
+//        For multiples of three: print “Fizz” instead of the number.
+//        For the multiples of five: print “Buzz”.
+//        For numbers which are multiples of both three and five: print “FizzBuzz”.
+
+//        for (int i = 0; i < 100; i++ ) {
+//            if (((i % 3) == 0) && ((i % 5) == 0))
+//            {
+//                System.out.println("Fizzbuzz");
+//            }
+//             if ((i % 3) == 0)
+//            {
+//                System.out.println("Fizz");
+//            }
+//            else if ((i % 5) == 0)
+//            {
+//                System.out.println("Buzz");
+//            }
+//            else
+//            {
+//                System.out.println(i);
+//            }
+//
+//            }
+
+
+//        Display a table of powers.
+//
+//                Prompt the user to enter an integer.
+//        Display a table of squares and cubes from 1 to the value entered.
+//        Ask if the user wants to continue.
+//        Assume that the user will enter valid data.
+//        Only continue if the user agrees to.
+//        Example Output
+//
+//
+//        What number would you like to go up to? 5
+//
+//        Here is your table!
+//        number | squared | cubed
+//        ------ | ------- | -----
+//        1      | 1       | 1
+//        2      | 4       | 8
+//        3      | 9       | 27
+//        4      | 16      | 64
+//        5      | 25      | 125
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter an integer?");
+        int userInput = scanner.nextInt();
+
+        System.out.println("Here is your table!");
+        System.out.println("number | squared | cubed ");
+        for (int i = 0; i <= .length; i++) {
+
+            System.out.println(userInput);
+        }
     }
 }
