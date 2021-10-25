@@ -33,7 +33,7 @@ public class ControlFlowExercises {
 //            i += 2;
 //            System.out.println(i);
 //        }
-//        while ( i < 100);
+//        while ( i <= 100);
 
 //        Alter your loop to count backwards by 5's from 100 to -10.
 
@@ -64,10 +64,10 @@ public class ControlFlowExercises {
 //        c. For
 //        Refactor the previous two exercises to use a for loop instead.
 
-//        for (int i = 0; i <= 100; i = i + 2) {
+//        for (int i = 0; i <= 1_000_000; i = i + 2) {
 //            System.out.println(i);
 
-//        for (long i = 2; i < 1000000; i = i * i) {
+//        for (long i = 2; i < 1_000_000; i = i * i) {
 //            System.out.println(i);
 //        }
 
@@ -122,16 +122,76 @@ public class ControlFlowExercises {
 //        4      | 16      | 64
 //        5      | 25      | 125
 
+//        boolean confirm;
+//        Scanner scanner = new Scanner(System.in);
+//
+//        do {
+//            System.out.println("Enter an integer?");
+//            int userInput = scanner.nextInt();
+////
+//            System.out.println("number |  squared | cubed ");
+//            System.out.println("------ |  ------- | ----- ");
+//
+//            for (int i = 1; i <= userInput; i++) {
+//                System.out.printf("%-7d|%-9d|%-6d\n", i, i * i, i * i * i);
+//            }
+//            System.out.println("Do you want to continue? (Y/N)");
+//
+//            confirm = scanner.next().equalsIgnoreCase(("y"));
+//
+//        } while (confirm);
+//
+//
+//        scanner.close();
+
+//        System.out.println("Here is your table!");
+//        System.out.println(userInput);
+//               int squ = userInput[i] * userInput[i];
+//            System.out.println(squ);
+//                int cube = userInput[i] * userInput[i] * userInput[i];
+//            System.out.println(cube);
+
+
+//        Convert given number grades into letter grades.
+//
+//                Prompt the user for a numerical grade from 0 to 100.
+//        Display the corresponding letter grade.
+//                Prompt the user to continue.
+//        Assume that the user will enter valid integers for the grades.
+//        The application should only continue if the user agrees to.
+//        Grade Ranges:
+//
+//        A : 100 - 88
+//        B : 87 - 80
+//        C : 79 - 67
+//        D : 66 - 60
+//        F : 59 - 0
+//
+
+
+        boolean confirm;
         Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.print("Enter a numerical grade: ");
+            int grade = scanner.nextInt();
 
-        System.out.println("Enter an integer?");
-        int userInput = scanner.nextInt();
+            if (grade < 60) {
+                System.out.println("F");
+            } else if (grade < 67) {
+                System.out.println("D");
+            } else if  (grade < 80) {
+                System.out.println("C");
+            } else if (grade < 88) {
+                System.out.println("B");
+            } else {
+                System.out.println("A");
+            }
+               System.out.println("Do you want to continue? (Y/N)");
 
-        System.out.println("Here is your table!");
-        System.out.println("number | squared | cubed ");
-        for (int i = 0; i <= .length; i++) {
+               confirm = scanner.next().equalsIgnoreCase(("y"));
+        } while(confirm);
 
-            System.out.println(userInput);
-        }
+
+        scanner.close();
     }
 }
