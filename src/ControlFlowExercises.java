@@ -122,27 +122,27 @@ public class ControlFlowExercises {
 //        4      | 16      | 64
 //        5      | 25      | 125
 
-//        boolean confirm;
-//        Scanner scanner = new Scanner(System.in);
+        boolean confirm;
+        Scanner scanner = new Scanner(System.in);
+
+        do {
+            System.out.println("Enter an integer?");
+            int userInput = scanner.nextInt();
 //
-//        do {
-//            System.out.println("Enter an integer?");
-//            int userInput = scanner.nextInt();
-////
-//            System.out.println("number |  squared | cubed ");
-//            System.out.println("------ |  ------- | ----- ");
-//
-//            for (int i = 1; i <= userInput; i++) {
-//                System.out.printf("%-7d|%-9d|%-6d\n", i, i * i, i * i * i);
-//            }
-//            System.out.println("Do you want to continue? (Y/N)");
-//
-//            confirm = scanner.next().equalsIgnoreCase(("y"));
-//
-//        } while (confirm);
-//
-//
-//        scanner.close();
+            System.out.println("number |  squared | cubed ");
+            System.out.println("------ |  ------- | ----- ");
+
+            for (int i = 1; i <= userInput; i++) {
+                System.out.printf("%-7d|%-9d|%-6d\n", i, i * i, i * i * i);
+            }
+            System.out.println("Do you want to continue? (Y/N)");
+
+            confirm = scanner.next().equalsIgnoreCase(("y"));
+
+        } while (confirm);
+
+
+        scanner.close();
 
 //        System.out.println("Here is your table!");
 //        System.out.println(userInput);
@@ -169,27 +169,27 @@ public class ControlFlowExercises {
 //
 
 
-        boolean confirm;
-        Scanner scanner = new Scanner(System.in);
-        do {
-            System.out.print("Enter a numerical grade: ");
-            int grade = scanner.nextInt();
-
-            if (grade < 60) {
-                System.out.println("F");
-            } else if (grade < 67) {
-                System.out.println("D");
-            } else if  (grade < 80) {
-                System.out.println("C");
-            } else if (grade < 88) {
-                System.out.println("B");
-            } else {
-                System.out.println("A");
-            }
-               System.out.println("Do you want to continue? (Y/N)");
-
-               confirm = scanner.next().equalsIgnoreCase(("y"));
-        } while(confirm);
+//        boolean confirm;
+//        Scanner scanner = new Scanner(System.in);
+//        do {
+//            System.out.print("Enter a numerical grade: ");
+//            int grade = scanner.nextInt();
+//
+//            if (grade < 60) {
+//                System.out.println("F");
+//            } else if (grade < 67) {
+//                System.out.println("D");
+//            } else if  (grade < 80) {
+//                System.out.println("C");
+//            } else if (grade < 88) {
+//                System.out.println("B");
+//            } else {
+//                System.out.println("A");
+//            }
+//               System.out.println("Do you want to continue? (Y/N)");
+//
+//               confirm = scanner.next().equalsIgnoreCase(("y"));
+//        } while(confirm);
 
 
         scanner.close();
