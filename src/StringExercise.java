@@ -15,6 +15,7 @@ public class StringExercise {
 //        We don't need no thought control
         System.out.println(message.replace("education","thought control"));
 //
+
 //        Check "this" out!, "s inside of "s!
         String message1 = "Check \"this\" out!, \"s inside of \"s!";
         System.out.println(message1);
