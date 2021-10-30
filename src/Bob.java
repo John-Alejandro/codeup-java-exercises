@@ -12,30 +12,29 @@ public class Bob {
 //        He says 'Fine. Be that way!' if you address him without actually saying anything. (empty input)
 //        He answers 'Whatever.' to anything else.
 //        Write the Java code necessary so that a user of your command line application can have a conversation with Bob.
-
-        boolean confirm;
         Scanner scanner = new Scanner(System.in);
+        String sentence;
+        boolean keepTalking;
+
+        System.out.println("Bob is new here, would you like to get to know him?");
+        System.out.println("Lets start the conversation.");
+
         do {
-            System.out.print("Bob is new here, get to know him by asking him question.");
-            String question = scanner.nextLine();
-//
-            if (question.endsWith("?")) {
+            System.out.println("What would you like to ask Bob?");
+            sentence = scanner.nextLine();
+
+            if (sentence.endsWith("?")) {
                 System.out.println("Sure");
-            } else if (question.endsWith("!")) {
+            } else if (sentence.endsWith("!")) {
                 System.out.println("Whoa,chill out Dude!");
-            } else if  (question.endsWith(" ")) {
+            } else if  (sentence.equals(" ")) {
                 System.out.println("Fine. Be that way!");
             } else  {
                 System.out.println("Whatever");
             }
-               System.out.println("Do you want to continue? (Y/N)");
 
-               confirm = scanner.next().equalsIgnoreCase(("y"));
-
-            scanner.nextLine();
-
-        } while(confirm);
-
-
+               System.out.println("Would you like to continue talking with Bob? (y/n)");
+               keepTalking = scanner.nextLine().equalsIgnoreCase("y");
+        } while(keepTalking);
     }
 }
