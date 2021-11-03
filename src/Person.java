@@ -2,7 +2,7 @@ import javax.swing.plaf.synth.SynthLookAndFeel;
 import java.util.Scanner;
 
 public class Person {
-    public String name;
+    private String name;
 
     // constructor
     public Person(String name) {

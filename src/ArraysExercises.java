@@ -17,14 +17,26 @@ public static void main(String[] args) {
 //    // Array elements visible
 //
 ////    Create an array that holds 3 Person objects. Assign a new instance of the Person class to each element. Iterate through the array and print out the name of each person in the array.
-//
-//    Person[] arr;
-//    arr = new Person[3];
-//    Person Jose = new Person("Jose");
-//    Person Mathias = new Person("Mathias");
-//    Person Bernie = new Person("Bernie");
-    String[] Person = {"Jose, Mathias, Bernie"};
-        for (String singleElement : Person) {
+
+    Person jose = new Person("Jose");
+    Person mathias = new Person("Mathias");
+    Person bernie = new Person("Bernie");
+    Person[] arr = new Person[]{jose, mathias, bernie};
+
+    System.out.println("Loop thru an array of persons");
+    for (Person singleElement : arr) {
+        System.out.println(singleElement.getName());
+    }
+    System.out.println();
+
+
+
+
+
+
+    System.out.println("Loop thru an array of strings");
+    String[] persons = {"Jose", "Mathias", "Bernie"};
+        for (String singleElement : persons) {
             System.out.printf("%s", singleElement);
             System.out.println();
         }
@@ -39,13 +51,6 @@ public static void main(String[] args) {
     System.out.println("Patrick");
 
 
-
-
-
-
-
-
-//
 
     }
 }

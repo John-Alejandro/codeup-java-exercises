@@ -16,8 +16,7 @@ public class ServerNameGenerator {
         String[] adjectivesArr = {"charming", "cruel", "fantastic", "gentle", "huge", "perfect", "rough", "sharp"};
         String[] nounsArr = {"farm","tree","jeans", "cat", "dog","sock", "ship", "hero", "baby", "monkey"};
 
-//        Random random = new Random();
-        System.out.println("Your random picks are: " + randomElementFromarray(nounsArr) + "-" + randomElementFromarray(adjectivesArr));
+        System.out.println("Here are your random picks: " + randomElementFromarray(nounsArr) + "-" + randomElementFromarray(adjectivesArr));
 
 
     }
