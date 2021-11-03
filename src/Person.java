@@ -2,14 +2,15 @@ import javax.swing.plaf.synth.SynthLookAndFeel;
 import java.util.Scanner;
 
 public class Person {
-    private String name;
+    public String name;
 
+    // constructor
     public Person(String name) {
         this.name = name;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -18,27 +19,38 @@ public class Person {
     }
 
     public void sayHello(){
-
+        System.out.println("Hello, there " + this.name);
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        Person john = new Person("John");
+
+        String johnName = john.getName();
+        String johnName2 = john.name;
+        System.out.println("johnName = " + johnName);
+        System.out.println("johnName2 = " + johnName2);
+
+        john.setName("John Alejandro");
+        System.out.println("john.getName() = " + john.getName());
+
+        john.sayHello();
 //        Person jason = new Person();
 //        jason.name = "Jason";
 //
 //        System.out.println(jason.name);
 //        System.out.println("Hello! " + jason.name);
-
+//
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");
 //        System.out.println(person1.getName().equals(person2.getName()));
 //        System.out.println(person1 == person2);
-
+//
 //        Person person1 = new Person("John");
 //        Person person2 = person1;
 //        System.out.println(person1 == person2);
-
+//
 //        Person person1 = new Person("John");
 //        Person person2 = person1;
 //        System.out.println(person1.getName());
@@ -70,6 +82,8 @@ public class Person {
 //
 //    Create a `main` method on the class that creates a new `Person` object and
 //    tests the above methods.
+
+
 //    1. Understanding references
 //
 //    The following code blocks make use of the Person class from the previous exercise. For each code block, think about what the code will output, then copy the code into IntelliJ and run it to see if it matches your expectations.
