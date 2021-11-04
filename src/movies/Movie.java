@@ -3,21 +3,28 @@ package movies;
 public class Movie {
 
     private String name;
-//    private String category;
+    private String category;
 
     // constructor
-    public Movie(String name) {
-        this.name = name;
+    public Movie(String movieName, String movieCategory) {
+        this.name = movieName;
+        this.category = movieCategory;
+    }
+
+    public void getName(String movieName) {
+         this.name = movieName;
+    }
+
+    public void setName(String movieCategory) {
+        this.name = movieCategory;
     }
 
     public String getName() {
-
-        return this.name;
+        return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-
+    public String getCategory(){
+        return category;
     }
 
 //    public Movie(String category) {

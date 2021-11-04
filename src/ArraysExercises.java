@@ -16,7 +16,7 @@ public static void main(String[] args) {
     System.out.println(Arrays.toString(numbers));
 //    // Array elements visible
 //
-////    Create an array that holds 3 Person objects. Assign a new instance of the Person class to each element. Iterate through the array and print out the name of each person in the array.
+////   1. Create an array that holds 3 Person objects. Assign a new instance of the Person class to each element. Iterate through the array and print out the name of each person in the array.
 
     Person jose = new Person("Jose");
     Person mathias = new Person("Mathias");
