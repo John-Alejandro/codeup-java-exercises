@@ -1,16 +1,17 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
-    public class Student {
+public class Student {
         private String name;
-        private int grades;
+        private ArrayList<Integer> grades;
 
 
-    // constructor
-    public Student(String name, int grades) {
+        // constructor
+    public Student(String name) {
         this.name = name;
-        this.grades = grades;
+        this.grades = new ArrayList<>();
     }
 
         public String getName() {
@@ -18,28 +19,42 @@ import java.util.ArrayList;
         }
 
         public void addGrade(int grade) {
-
+            grades.add(grade);
         }
 
         public double getGradeAverage() {
-            return grades;
+            double gradeAverage = 0;
+            for (int i = 0; i < grades.size(); i++) {
+                gradeAverage = gradeAverage + grades.get(i);
+
+            }
+            double Average = (gradeAverage/grades.size());
+            System.out.println(Average);
+            return Average;
         }
-
-
+        
         public static void main(String[] args) {
 
-            // arrayList
-            ArrayList<Integer> grades = new ArrayList<>();
-            grades.add(88);
-            grades.add(85);
-            grades.add(90);
-            grades.add(81);
-            grades.add(93);
+            Student cohort = new Student("John");
+            Student cohort2 = new Student("Angela");
 
-            System.out.println("Student's Grades = " + grades);
-//            System.out.println(name);
-//            System.out.println(getGradeAverage);
-//            System.out.println(addGrade);
+            cohort.addGrade(88);
+            cohort.addGrade(90);
+            cohort.addGrade(80);
+            cohort.addGrade(91);
+            cohort.addGrade(85);
+
+            cohort2.addGrade(99);
+            cohort2.addGrade(95);
+            cohort2.addGrade(91);
+            cohort2.addGrade(93);
+            cohort2.addGrade(100);
+
+            System.out.println(cohort);
+//            System.out.println();
+            cohort2.getGradeAverage();
+            cohort.getGradeAverage();
+
 
         }
 
