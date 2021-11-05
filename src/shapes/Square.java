@@ -12,7 +12,7 @@ public class Square extends Quadrilateral {
 //    }
 
 
-    void setLength() {
+    public void setLength() {
 
     }
 
