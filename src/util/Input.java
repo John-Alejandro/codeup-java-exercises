@@ -1,6 +1,7 @@
 package util;
 
 import java.util.Scanner;
+import java.util.function.DoubleUnaryOperator;
 
 public class Input {
     private Scanner scanner;
@@ -11,7 +12,7 @@ public class Input {
     }
 
     public String getString() {
-        System.out.println("Enter a string");
+//        System.out.println("Enter a string");
         return this.scanner.nextLine();
     }
 
@@ -31,12 +32,25 @@ public class Input {
     }
 
     public int getInt() {
-        return this.scanner.nextInt();
+        String input = getString();
+        try {
+//             Integer.valueOf(input);
+        } catch (NumberFormatException e) {
+            System.out.println("Improper input please enter an integer.");
+            return getInt();
+        }
+                return Integer.valueOf(input);
     }
 
     public int getInt(String prompt) {
-        System.out.println(prompt);
-        return getInt();
+        int number;
+        try{
+            number = Integer.valueOf(getString (prompt));
+            return number;
+        } catch (NumberFormatException e) {
+            System.out.println("Wrong input, try again.");
+        }
+        return getInt(prompt);
     }
 
     public int getInt(int min, int max) {
@@ -58,12 +72,30 @@ public class Input {
     }
 
     public double getDouble() {
-        return this.scanner.nextDouble();
+        String doubleNum = getString();
+        try {
+//            Double.valueOf(doubleNum);
+        } catch (NumberFormatException e) {
+            System.out.println("Wrong type of input.");
+            return getDouble();
+        }
+        return Double.valueOf(doubleNum);
+
+
+//        return this.scanner.nextDouble();
     }
 
     public double getDouble(String prompt) {
-        System.out.println(prompt);
-        return getDouble();
+        double number;
+        try {
+            number = Double.valueOf(getString(prompt));
+            return number;
+        } catch (NumberFormatException e){
+            System.out.println("Wrong input type, try again.");
+            return getDouble(prompt);
+        }
+//        System.out.println(prompt);
+//        return getDouble();
     }
 
     public double getDouble(double min, double max) {
