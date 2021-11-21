@@ -1,0 +1,28 @@
+public class Dog extends Pet implements Barkable{
+    private String breed;
+
+
+    public Dog(int age, boolean isRescue, String name, String breed) {
+        super(age, isRescue, name);
+        this.breed = breed;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    @Override
+    public void bark() {
+        System.out.println("Bork Bork");
+    }
+
+    public static void main(String[] args) {
+        Dog puppy = new Dog(5,true,"Coco","black/white");
+
+        puppy.bark();
+    }
+}

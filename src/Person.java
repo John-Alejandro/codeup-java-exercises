@@ -34,8 +34,8 @@ public class Person {
         System.out.println("johnName = " + johnName);
         System.out.println("johnName2 = " + johnName2);
 
-        john.setName("John Alejandro");
-        System.out.println("john.getName() = " + john.getName());
+//        john.setName("John Alejandro");
+//        System.out.println("john.getName() = " + john.getName());
 
         john.sayHello();
 //        Person jason = new Person();

@@ -1,64 +1,75 @@
 package grades;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Student {
-        private String name;
-        private ArrayList<Integer> grades;
+    private String name;                            // students name
+private ArrayList<Integer> grades;                  // student grades
 
 
-        // constructor
+    // constructor
     public Student(String name) {
         this.name = name;
-        this.grades = new ArrayList<>();
+        this.grades = new ArrayList<>();            // new students grades
     }
 
-        public String getName() {
-            return name;
-        }
+    public String getName() {                       // returns the students name
+        return this.name;
+    }
 
-        public void addGrade(int grade) {
-            grades.add(grade);
-        }
+    public void addGrade(int grade) {               // adds the given grade to the grades property
+        this.grades.add(grade);
+    }
 
-        public double getGradeAverage() {
-            double gradeAverage = 0;
-            for (int i = 0; i < grades.size(); i++) {
-                gradeAverage = gradeAverage + grades.get(i);
-
-            }
-            double Average = (gradeAverage/grades.size());
-            System.out.println(Average);
-            return Average;
+    public double getGradeAverage() {                   // returns the average of the students grades
+        double sum = 0;                                     // a bucket to store the sum of the grades
+//        for (int i = 0; i < grades.size(); i++) {           // Can use advanced loop for( int grade : this.grades({
+//            gradeAverage = gradeAverage + grades.get(i);        //                      sum += grade;
+            for (int grade : this.grades){
+                sum += grade;
         }
+        return sum / this.grades.size();
+    }
+
+
+
         
         public static void main(String[] args) {
 
-            Student cohort = new Student("John");
-            Student cohort2 = new Student("Angela");
+            Student john = new Student("John");
+            Student angela = new Student("Angela");
+            Student jackie = new Student("Jackie");
 
-            cohort.addGrade(88);
-            cohort.addGrade(90);
-            cohort.addGrade(80);
-            cohort.addGrade(91);
-            cohort.addGrade(85);
+            john.addGrade(88);
+            john.addGrade(90);
+            john.addGrade(80);
+            john.addGrade(91);
+            john.addGrade(85);
 
-            cohort2.addGrade(99);
-            cohort2.addGrade(95);
-            cohort2.addGrade(91);
-            cohort2.addGrade(93);
-            cohort2.addGrade(100);
+            angela.addGrade(99);
+            angela.addGrade(95);
+            angela.addGrade(91);
+            angela.addGrade(93);
+            angela.addGrade(100);
 
-            System.out.println(cohort);
-//            System.out.println();
-            cohort2.getGradeAverage();
-            cohort.getGradeAverage();
+            jackie.addGrade(91);
+            jackie.addGrade(85);
+            jackie.addGrade(71);
+            jackie.addGrade(98);
+            jackie.addGrade(90);
+
+            System.out.println("john.grades = " + john.grades);
+            System.out.println("angela.grades = " + angela.grades);
+            System.out.println("jackie.grades = " + jackie.grades);
+            System.out.println("----Grade Averages------");
+            System.out.println("john.getGradeAverage = " + john.getGradeAverage());
+            System.out.println("angela.getGradeAverage = " + angela.getGradeAverage());
+            System.out.println("jackie.getGradeAverage = " + jackie.getGradeAverage());
 
 
         }
 
-    }
+}
 
 //  For this exercise, create a directory inside of src named grades. Create the classes defined below inside of grades.
 
