@@ -36,37 +36,37 @@ private ArrayList<Integer> grades;                  // student grades
         
         public static void main(String[] args) {
 
-            Student john = new Student("John");
-            Student angela = new Student("Angela");
-            Student jackie = new Student("Jackie");
-
-            john.addGrade(88);
-            john.addGrade(90);
-            john.addGrade(80);
-            john.addGrade(91);
-            john.addGrade(85);
-
-            angela.addGrade(99);
-            angela.addGrade(95);
-            angela.addGrade(91);
-            angela.addGrade(93);
-            angela.addGrade(100);
-
-            jackie.addGrade(91);
-            jackie.addGrade(85);
-            jackie.addGrade(71);
-            jackie.addGrade(98);
-            jackie.addGrade(90);
-
-            System.out.println("john.grades = " + john.grades);
-            System.out.println("angela.grades = " + angela.grades);
-            System.out.println("jackie.grades = " + jackie.grades);
-            System.out.println("----Grade Averages------");
-            System.out.println("john.getGradeAverage = " + john.getGradeAverage());
-            System.out.println("angela.getGradeAverage = " + angela.getGradeAverage());
-            System.out.println("jackie.getGradeAverage = " + jackie.getGradeAverage());
-
-
+//            Student john = new Student("John");
+//            Student angela = new Student("Angela");
+//            Student jackie = new Student("Jackie");
+//
+//            john.addGrade(88);
+//            john.addGrade(90);
+//            john.addGrade(80);
+//            john.addGrade(91);
+//            john.addGrade(85);
+//
+//            angela.addGrade(99);
+//            angela.addGrade(95);
+//            angela.addGrade(91);
+//            angela.addGrade(93);
+//            angela.addGrade(100);
+//
+//            jackie.addGrade(91);
+//            jackie.addGrade(85);
+//            jackie.addGrade(71);
+//            jackie.addGrade(98);
+//            jackie.addGrade(90);
+//
+//            System.out.println("john.grades = " + john.grades);
+//            System.out.println("angela.grades = " + angela.grades);
+//            System.out.println("jackie.grades = " + jackie.grades);
+//            System.out.println("----Grade Averages------");
+//            System.out.println("john.getGradeAverage = " + john.getGradeAverage());
+//            System.out.println("angela.getGradeAverage = " + angela.getGradeAverage());
+//            System.out.println("jackie.getGradeAverage = " + jackie.getGradeAverage());
+//
+//
         }
 
 }
