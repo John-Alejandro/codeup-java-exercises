@@ -72,7 +72,15 @@ public class GradesApplication {
                 System.out.printf("Match found for gitName %s, %s is the name of the student. Here is their current grade average : %s%n", userSearch, result.getName(), result.getGradeAverage());
             }
 
-            continueFlag = false;
+            System.out.println("Would you like to continue searching? [Yes/No]");
+            String userResponse = myScanner.next();
+            if (userResponse.equalsIgnoreCase("yes")) {
+                continueFlag = true;
+            } else {
+                System.out.println("Good bye.");
+                continueFlag = false;
+
+            }
 
 
     }
